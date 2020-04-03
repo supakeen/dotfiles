@@ -1,0 +1,17 @@
+[user]
+    name = supakeen 
+    email = cmdr@supakeen.com
+[alias]
+    plog = log --oneline --abbrev-commit --all --graph --decorate --color
+    lc = log ORIG_HEAD.. --stat --no-merges
+[color]
+    status = auto
+    branch = auto
+    diff = auto
+    grep = auto
+[push]
+	default = current
+[core]
+    editor = vim
+[merge]
+    tool = vimdiff
