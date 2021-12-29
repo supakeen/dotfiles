@@ -1,3 +1,53 @@
+" Based on the 'sensible.vim' setup by tpope.
+
+if has("autocmd")
+    filetype plugin indent on
+endif
+
+if has("syntax")
+    syntax enable
+endif
+
 set ts=4
 set sw=4
 set et
+
+set autoindent
+set backspace=indent,eol,start
+set smarttab
+set complete-=i
+
+set incsearch
+
+if maparg('<C-L>', 'n') ==# ''
+    nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
+
+set laststatus=2
+set ruler
+set wildmenu
+
+if !&scrolloff
+    set scrolloff=1
+endif
+
+if !&sidescrolloff
+    set sidescrolloff=5
+endif
+
+set display+=lastline
+
+if &listchars ==# 'eol:$'
+    set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+
+set autoread
+
+set sessionoptions-=options
+set viewoptions-=options
+
+if &t_Co == 8 && $TERM !~# '^Eterm'
+    set t_Co=16
+endif
+
+" vim:set ft=vim et sw=2:
