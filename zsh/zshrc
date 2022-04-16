@@ -1,1 +1,3 @@
 PROMPT="€ "
+
+alias gpm="git push home && git push github"  # git push mirrors.
