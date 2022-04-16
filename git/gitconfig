@@ -1,5 +1,5 @@
 [user]
-    name = supakeen 
+    name = Simon de Vlieger
     email = cmdr@supakeen.com
 [alias]
     plog = log --oneline --abbrev-commit --all --graph --decorate --color
