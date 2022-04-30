@@ -13,5 +13,5 @@ ln -s `realpath ./zsh/zshrc` ~/.zshrc
 [[ -e "~/.gitconfig" ]] || rm -fr ~/.gitconfig
 ln -s `realpath ./git/gitconfig` ~/.gitconfig
 
-[[ -e "~/.xsessionrc" ]] || rm -fr ~/.xsessionrc
-ln -s `realpath ./x/xsessionrc` ~/.xsessionrc
+[[ -e "~/.Xmodmap" ]] || rm -fr ~/.Xmodmap
+ln -s `realpath ./x/Xmodmap` ~/.Xmodmap
