@@ -15,3 +15,6 @@ ln -s `realpath ./git/gitconfig` ~/.gitconfig
 
 [[ -e "~/.Xmodmap" ]] || rm -fr ~/.Xmodmap
 ln -s `realpath ./x/Xmodmap` ~/.Xmodmap
+
+[[ -e "~/.xinitrc" ]] || rm -fr ~/.xinitrc
+ln -s `realpath ./x/xinitrc` ~/.xinitrc
