@@ -20,3 +20,6 @@ ln -s `realpath ./x/Xmodmap` ~/.Xmodmap
 
 [[ -e "~/.xinitrc" ]] || rm -fr ~/.xinitrc
 ln -s `realpath ./x/xinitrc` ~/.xinitrc
+
+[[ -f "~/.config/xfce4/xfconf" ]] && rm -fr ~/.config/xfce4/xfconf
+ln -s `realpath ./xfce4/xfconf` ~/.config/xfce4/xfconf
