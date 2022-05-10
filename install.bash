@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euxo pipefail
 
+touch ~/.hushlogin
+
 [[ -e "~/.vimrc" ]] || rm -fr ~/.vimrc
 ln -s `realpath ./vim/vimrc` ~/.vimrc
 
