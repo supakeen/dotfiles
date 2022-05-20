@@ -50,4 +50,6 @@ if &t_Co == 8 && $TERM !~# '^Eterm'
     set t_Co=16
 endif
 
+colorscheme elflord
+
 " vim:set ft=vim et sw=2:
