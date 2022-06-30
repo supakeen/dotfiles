@@ -1,7 +1,9 @@
 PROMPT="%n@%m %1~ € "
 
 alias gpm="git push home && git push github"  # git push mirrors.
+
 alias snek="python3"
+alias safesnek="python3 -P"
 
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
