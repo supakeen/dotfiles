@@ -5,6 +5,8 @@ alias gpm="git push home && git push github"  # git push mirrors.
 alias snek="python3"
 alias safesnek="python3 -P"
 
+export GOPATH="$HOME/.go"
+
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
@@ -13,6 +15,11 @@ fi
 if ! [[ "$PATH" =~ "$HOME/.cargo/bin:" ]]
 then
     PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+if ! [[ "$PATH" =~ "$HOME/.go/bin:" ]]
+then
+    PATH="$HOME/.go/bin:$PATH"
 fi
 
 export PATH
