@@ -21,5 +21,9 @@ ln -s `realpath ./x/Xmodmap` ~/.Xmodmap
 [[ -e "~/.xinitrc" ]] || rm -fr ~/.xinitrc
 ln -s `realpath ./x/xinitrc` ~/.xinitrc
 
+[[ -f "~/.config/alacritty.yml" ]] && rm -fr ~/.config/alacritty.yml
+ln -s `realpath ./alacritty/alacritty.yml` ~/.config/alacritty.yml
+
 [[ -f "~/.config/xfce4/xfconf" ]] && rm -fr ~/.config/xfce4/xfconf
 ln -s `realpath ./xfce4/xfconf` ~/.config/xfce4/xfconf
+
