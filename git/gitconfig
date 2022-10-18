@@ -10,9 +10,10 @@
     diff = auto
     grep = auto
 [push]
-	default = current
+    default = current
 [core]
     editor = vim
+    excludesfile = /home/user/.gitignore
 [merge]
     tool = vimdiff
 [init]
