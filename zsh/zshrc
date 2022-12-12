@@ -5,6 +5,7 @@ alias gpm="git push home && git push github"  # git push mirrors.
 alias snek="python3"
 alias safesnek="python3 -P"
 
+export PIP_REQUIRE_VIRTUALENV="yes"
 export GOPATH="$HOME/.go"
 
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
