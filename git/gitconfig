@@ -1,6 +1,7 @@
 [user]
     name = Simon de Vlieger
     email = cmdr@supakeen.com
+	signingkey = D6C290547A1167B2!
 [alias]
     plog = log --oneline --abbrev-commit --all --graph --decorate --color
     lc = log ORIG_HEAD.. --stat --no-merges
@@ -18,3 +19,5 @@
     tool = vimdiff
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
