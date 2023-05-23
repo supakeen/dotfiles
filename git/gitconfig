@@ -5,6 +5,7 @@
 [alias]
     plog = log --oneline --abbrev-commit --all --graph --decorate --color
     lc = log ORIG_HEAD.. --stat --no-merges
+    up = "!git pull upstream $(git branch --show-current); git push origin $(git branch --show-current)"
 [color]
     status = auto
     branch = auto
