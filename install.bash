@@ -4,7 +4,6 @@ set -euxo pipefail
 touch ~/.hushlogin
 
 mkdir -p ~/bin
-cp common-scripts/bin/* ~/bin
 
 [[ -e "~/.vimrc" ]] || rm -fr ~/.vimrc
 ln -s `realpath ./vim/vimrc` ~/.vimrc
@@ -26,6 +25,3 @@ ln -s `realpath ./x/xinitrc` ~/.xinitrc
 
 [[ -e "~/.config/alacritty.yml" ]] || rm -fr ~/.config/alacritty.yml
 ln -s `realpath ./alacritty/alacritty.yml` ~/.config/alacritty.yml
-
-[[ -e "~/.config/xfce4/xfconf" ]] || rm -fr ~/.config/xfce4/xfconf
-ln -s `realpath ./xfce4/xfconf` ~/.config/xfce4/xfconf
