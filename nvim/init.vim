@@ -22,7 +22,7 @@ set mouse=v
 set number
 " set cc=80
 set noswapfile
-colorscheme habamax
+colorscheme desert
 set t_Co=256
 
 if !&scrolloff
