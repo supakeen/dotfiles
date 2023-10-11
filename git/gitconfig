@@ -15,7 +15,7 @@
 [push]
     default = current
 [core]
-    editor = vim
+    editor = nvim
     excludesfile = /home/user/.gitignore
 [merge]
     tool = vimdiff
