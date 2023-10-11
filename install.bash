@@ -8,6 +8,9 @@ mkdir -p ~/bin
 [[ -e "~/.vimrc" ]] || rm -fr ~/.vimrc
 ln -s `realpath ./vim/vimrc` ~/.vimrc
 
+[[ -e "~/.config/nvim/init.vim" ]] || rm -fr ~/.config/nvim/init.vim
+ln -s `realpath ./nvim/init.vim` ~/.config/nvim/init.vim
+
 [[ -e "~/.tmux.conf" ]] || rm -fr ~/.tmux.conf
 ln -s `realpath ./tmux/tmux.conf` ~/.tmux.conf
 
