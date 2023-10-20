@@ -1,5 +1,6 @@
 PROMPT="%n@%m %1~ € "
 
+alias bat="bat -n"
 alias vi="nvim"
 alias vim="nvim"
 alias gpm="git push home && git push github"  # git push mirrors.
