@@ -28,3 +28,6 @@ ln -s `realpath ./x/xinitrc` ~/.xinitrc
 
 [[ -e "~/.config/alacritty.yml" ]] || rm -fr ~/.config/alacritty.yml
 ln -s `realpath ./alacritty/alacritty.yml` ~/.config/alacritty.yml
+
+[[ -e "~/.config/user-dirs.dirs" ]] || rm -fr ~/.config/user-dirs.dirs
+ln -s `realpath ./xdg/user-dirs.dirs` ~/.config/user-dirs.dirs
