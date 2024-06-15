@@ -1,7 +1,7 @@
 [user]
     name = Simon de Vlieger
     email = cmdr@supakeen.com
-	signingkey = D6C290547A1167B2!
+	signingkey = /home/user/.ssh/id_ed25519.pub
 [alias]
     plog = log --oneline --abbrev-commit --all --graph --decorate --color
     lc = log ORIG_HEAD.. --stat --no-merges
@@ -23,3 +23,5 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[gpg]
+	format = ssh
