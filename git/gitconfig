@@ -1,6 +1,6 @@
 [user]
     name = Simon de Vlieger
-    email = cmdr@supakeen.com
+    email = supakeen@redhat.com
 	signingkey = /home/user/.ssh/id_ed25519.pub
 [alias]
     plog = log --oneline --abbrev-commit --all --graph --decorate --color
